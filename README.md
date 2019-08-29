@@ -12,6 +12,8 @@ UseCases
      2. To find the top X most visited IP
 
      3. To find the top X most used URL
+     
+ (4)NOTE: this tool has been tested with Windows, hence the default file path used ,follows windows format. Should be updated in Test class to right format before running test cases.
 
 
 How to use the Log parser tool
