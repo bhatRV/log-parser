@@ -47,3 +47,5 @@ Assumption
 
  >> Basic tool , No REST APIs included. Can be extended if required
  >> import statements are Auto added, dint invest time to remove the wild chars.hope that's ok
+
+Screen shot of out put attached as output.jpg
