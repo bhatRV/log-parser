@@ -5,7 +5,6 @@ import mycode.log.parser.LogParser;
 import mycode.log.parser.LogParserImpl;
 
 public class LogParsingInvoker {
-static String logFileName="C:\\Users\\rashmibh\\Desktop\\ACT\\fileA.log";
 
 public static LogParser logParser = new LogParserImpl();
 
@@ -15,13 +14,16 @@ public static LogParser logParser = new LogParserImpl();
      * @param args
      */
     public static void main(String[] args) {
+
         if (args.length < 1) {
             System.err.println("Usage: pass <fileName>  <HowManyTopElements(optional)>");
             System.exit(0);
         }
+
+        //cunt of Unique IP addresses
         try {
             int ips = logParser.getNumberOfUniqueIps(args[0]);
-            System.out.println("IPS: " + ips);
+            System.out.println("Number of Unique IP addresses: " + ips);
         } catch (ParsingException e) {
             e.printStackTrace();
         }
@@ -31,7 +33,7 @@ public static LogParser logParser = new LogParserImpl();
         { //fetch Top URLS
             try {
                 String ips[] = logParser.getTopXURLs(args[0], Integer.parseInt(args[1]));
-                System.out.println("TOP URLS  : " );
+                System.out.println("\n"+Integer.parseInt(args[1])+ " Most visited URLS  : " );
                 for (int i = 0; i < ips.length; i++) {
                     System.out.println( ips[i]);
 
@@ -48,7 +50,7 @@ public static LogParser logParser = new LogParserImpl();
                 String ips[] = logParser.getTopXActiveIps(args[0], Integer.parseInt(args[1]));
 
 
-             System.out.println("\nIPS top : " );
+             System.out.println("\n"+Integer.parseInt(args[1]) +" Most visited IPs  : " );
                 for (int i = 0; i < ips.length; i++) {
                     System.out.println( ips[i]);
 

@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 public class LogParserImplTest {
     public static LogParser logParser = new LogParserImpl();
 
-    //Please use the right format of path depending on the OS
+    //Please use the right format of path depending on the OS.this one has been used per windows
     static String logFileName = "C:\\Users\\rashmibh\\Desktop\\ACT\\fileA.log";
     static String emptyLogFile = "C:\\Users\\rashmibh\\Desktop\\ACT\\fileEmpty.log";
     static String noContentFile = "C:\\Users\\rashmibh\\Desktop\\ACT\\nocontent.log";
