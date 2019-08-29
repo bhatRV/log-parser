@@ -1,4 +1,5 @@
-﻿
+﻿NOTE: this tool has been tested with Windows, hence the default file path used ,follows windows format. Should be updated in Test class to right format before running test cases.
+ 
 UseCases
 ----------
 
@@ -7,13 +8,14 @@ UseCases
 (2) The tool takes log file name as the main input
 
 (3) 3 methods are exposed right now to do the following:
+
      1. To find the number of unique IP addresses
 
      2. To find the top X most visited IP
 
      3. To find the top X most used URL
      
- (4)NOTE: this tool has been tested with Windows, hence the default file path used ,follows windows format. Should be updated in Test class to right format before running test cases.
+
 
 
 How to use the Log parser tool
